@@ -65,7 +65,7 @@ python train.py
 
 3. Launch the app:
 ```bash
-python app/gradio_app.py
+python gradio_app.py
 ````
 ---
 
@@ -78,11 +78,6 @@ python app/gradio_app.py
 - gradio  
 - matplotlib  
 - pillow
-
-Install with:
-```bash
-pip install -r requirements.txt
-```
 
 ---
 
