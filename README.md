@@ -89,7 +89,7 @@ pip install -r requirements.txt
 
 ## Sample Output
 
-*(Insert your own screenshot of a Grad-CAM prediction here)*
+![Sample Output]((https://github.com/tpaidich/cv-blur-detector/blob/main/example%20output.png))
 
 ---
 
