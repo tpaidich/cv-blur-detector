@@ -6,10 +6,10 @@ A computer vision project that classifies whether an image is **blurred** or **n
 
 ## Features
 
-- Classifies images as **blurred** or **sharp**
-- Uses a custom **CNN model** (no pre-trained MobileNet)
+- Classifies images as blurred or not blurred
+- Uses a custom CNN model
 - Supports Grad-CAM visualizations to highlight what parts of the image influenced the decision
-- Interactive **Gradio web app** with captioned overlays
+- Interactive Gradio web app with captioned overlays
 - Side-by-side layout with prediction + heatmap
 - Confidence score shown with each prediction
 
@@ -33,7 +33,7 @@ Conv2D (32 filters) → MaxPooling
 
 Grad-CAM overlays help visualize which regions the model focused on during classification:
 
-- 🔴 Red / 🟡 Yellow: High attention (important areas)
+- 🔴 Red / 🟡 Yellow: High   attention (important areas)
 - 🔵 Blue: Low attention
 
 This makes the CNN more explainable and shows *why* the model classified an image as blurred or not.
