@@ -2,7 +2,7 @@
 
 This project is a deep learning-based computer vision system that classifies whether an image is blurred or not blurred, using a custom-built Convolutional Neural Network (CNN). The model is trained on a dataset containing both defocus-blurred and motion-blurred images, as well as sharp images, organized into labeled subdirectories.
 
-The CNN architecture is designed from scratch and consists of multiple convolutional and max-pooling layers to extract spatial features such as edges, texture smoothness, and detail sharpness - all key indicators of image clarity. These feature maps are flattened and passed through dense layers to produce a binary classification output via a sigmoid activation. The model is optimized using binary cross-entropy loss and trained to distinguish subtle visual differences between sharp and degraded images.
+The CNN architecture is designed from scratch and consists of multiple convolutional and max-pooling layers to extract spatial features such as edges, texture smoothness, and detail sharpness - all key indicators of image clarity. I trained the model on [this image dataset](https://www.kaggle.com/datasets/kwentar/blur-dataset) I found on Kaggle, saving it in src/data/. 
 
 To interpret model decisions, Grad-CAM (Gradient-weighted Class Activation Mapping) is used to generate heatmaps that visualize the regions the CNN considered most important during classification. For instance, in blurred images, the model may focus on edge regions or areas where detail is lost to make its decision.
 
@@ -11,10 +11,6 @@ The project also includes a Gradio-based interface for real-time interaction. Us
 - A prediction: "Blurred" or "Not Blurred"
 - The model's confidence score
 - A Grad-CAM heatmap displayed next to the image, with color cues indicating focus intensity (red for high attention, blue for low)
-
-This project highlights how CNNs can learn hierarchical visual features to solve real-world quality assessment tasks in images, while offering visual interpretability through integrated explainability tools.
-
-I trained the model on [this image dataset](https://www.kaggle.com/datasets/kwentar/blur-dataset) I found on Kaggle, saving it in src/data/. 
 
 ---
 
