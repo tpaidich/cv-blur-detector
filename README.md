@@ -4,7 +4,7 @@ This project is a deep learning-based computer vision system that classifies whe
 
 The CNN architecture is designed from scratch and consists of multiple convolutional and max-pooling layers to extract spatial features such as edges, texture smoothness, and detail sharpness - all key indicators of image clarity. I trained the model on [this image dataset](https://www.kaggle.com/datasets/kwentar/blur-dataset) I found on Kaggle, saving it in src/data/. 
 
-To interpret model decisions, Grad-CAM (Gradient-weighted Class Activation Mapping) is used to generate heatmaps that visualize the regions the CNN considered most important during classification. For instance, in blurred images, the model may focus on edge regions or areas where detail is lost to make its decision.
+To interpret model decisions, Grad-CAM (Gradient-weighted Class Activation Mapping) is used to generate heatmaps that visualize the regions the CNN considered most important during classification. For example, in blurred images, the model may focus on edge regions or areas where detail is lost to make its decision.
 
 The project also includes a Gradio-based interface for real-time interaction. Users can upload an image and receive:
 
