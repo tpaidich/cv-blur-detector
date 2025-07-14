@@ -1,6 +1,6 @@
 # Computer Vision Blur Detector
 
-This project is a deep learning-based computer vision system that classifies whether an image is blurred or not blurred, using a custom-built Convolutional Neural Network (CNN). The model is trained on a dataset containing both defocus-blurred and motion-blurred images, as well as sharp images, organized into labeled subdirectories.
+This project is a deep learning-based computer vision system that classifies whether an image is blurred or not blurred, using a custom-built Convolutional Neural Network (CNN) with TensorFlow Keras. The model is trained on a dataset containing both defocus-blurred and motion-blurred images, as well as sharp images, organized into labeled subdirectories.
 
 The CNN architecture is designed from scratch and consists of multiple convolutional and max-pooling layers to extract spatial features such as edges, texture smoothness, and detail sharpness - all key indicators of image clarity. I trained the model on [this image dataset](https://www.kaggle.com/datasets/kwentar/blur-dataset) I found on Kaggle, saving it in src/data/. 
 
